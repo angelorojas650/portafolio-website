@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portafolio Web AR</title>
+</head>
+<body>
+    <!-- SECCION INICIO -->
+    <section id = "inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/AR/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#habilidades" onclick="seleccionar(this)">HABILIDADES</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Iconos del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- iconos de las redes sociales -->
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/angelo-rojas-92a78b159/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/rojasangl/"><i class="fa-brands fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Angelo Rojas</span>, Desarrollador Junior</h2>
+                <p class="descripcion">Ingeniero de Sistemas, autodidacta, actualmente centrado en el desarrollo de software Java, con conocimientos básicos en JavaScrpit, NodeJS, PHP y C#.</p>
+                <a href="#portafolio"> Ir a Portafolio</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/yoeditado.jpg" alt="">
+        </div>
+        <div class="sobremi">
+                <p class="titulo-seccion">Sobre Mi</p>
+                <h2>Hola, soy<span> Angelo Rojas</span></h2>
+                <h3>Desarrollador de software junior</h3>
+                <p>Ingeniero de Sistemas, con
+                    experiencia en desarrollo de
+                    aplicaciones web en PHP
+                    intermedios por proyectos de pasantia. Actualmente estoy realizando proyectos personales en Java(BackEnd) de forma autodidacta.</p> 
+                    <p>Experiencia en
+                    electrónica (reparación y
+                    mantenimiento a equipos
+                    cómputo, Puntos de venta y
+                    cajeros automáticos).</p> 
+                    <p>Adicionalmente tengo un manejo
+                    básico de 
+                    MySQL, PostgreSQL, diseño web (HTML y CSS),
+                     JavaScript, NODE JS y C#.</p>
+                
+                <a href="docs/cv.pdf" download="CV-Angelo-Rojas.pdf">Descargar CV</a>
+            
+        </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <section id="habilidades">
+        <h3 class="titulo-seccion">MIS HABILIDADES</h3>
+        <div class="fila">
+            <div class="habilidad">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Base de Datos</h4>
+                <hr>
+                <ul class="habilidades-tag">
+                    <li>MySQL</li>
+                    <li>PosgreSQL</li>
+                </ul>
+                <p>Al trabajar en CANTV con el proyecto SIIS se utilizo una DB PosgreSQL</p>
+                <p>en el proyecto en el que me encuentro actuamente se realizan conecciones a una base de datos MySQL para su desarrollo se utilizo XAMPP</p>
+            </div>
+            <div class="habilidad">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Programación BackEnd</h4>
+                <hr>
+                <ul class="habilidades-tag">
+                    <li>Java</li>
+                    <li>JavaScrpit</li>
+                    <li>PHP</li>
+                </ul>
+                <p>He trabajado en el desarrollo de un módulo (con programación orientada a
+                    objetos) en PHP y con el Framework Yii en su versión 1.1.x,
+                    del Sistema de Información Integral de Salud (SIIS)</p>
+                    <p>Actualmente me encuento desarrollando una aplicación en Java, para la gestión
+                        de la información, orientado a al sector de reparacion y mantenimiento de 
+                        equipos cómputo e impresión.
+                    </p>
+
+            </div>
+            <div class="habilidad">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Programación FrontEnd</h4>
+                <hr>
+                <ul class="habilidades-tag">
+                    <li>PhP</li>
+                    <li>JavaScrpit</li>
+                    <li>Bootstrap</li>
+                </ul>
+                <p>El desarrollo de mi portafolio web con las tecnologías HTML CSS y JavaScript</p>
+                <p>Diversos proyectos universitarios a lo largo de mi carrera como Ingeniero de Sistemas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                
+                    <video src="img/PortafolioWeb.mp4" controls></video>
+                
+                <div class="info">
+                    <a href="http://localhost/Portafolio" target="_blank">
+                        <h4>Visitar Repositorio</h4>
+                    </a>
+                    <a href="http://localhost/Portafolio" target="_blank">
+                        <p>Mi Portafolio Web</p>
+                    </a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto2.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Aplicación Java</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contáctame ahora</h3>
+        <div class="contenedor-form">
+            <form action="https://formsubmit.co/angelorojas650@gmail.com" method="POST">
+                <div class="fila mitad" id="fila-mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad" name="nombre">
+                    <input type="text" placeholder="Dirección de Email" class="input-mitad" name="email">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full" name="Tema">
+                </div>
+                <div class="fila">
+                    <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                <input type="hidden" name="_next" value="http://localhost/Portafolio">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/angelo-rojas-92a78b159/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/rojasangl/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
